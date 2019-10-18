@@ -9,24 +9,17 @@ import java.io.PrintWriter;
 public class PageViewCounterServlet extends HttpServlet {
 
     static int counter = 0;
-    @Override
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String reset = request.getParameter("reset");
-        if ("reset".equalsIgnoreCase(reset)) {
+        if (reset != null)
             counter = 0;
-            String output = String.format("Counter has been reset to %d%n", counter);
+            String output = String.format("This is response %d%n", counter);
             response.setContentType("text/html");
             PrintWriter out = response.getWriter();
             out.println(output);
             counter++;
-        } else {
-            String output = String.format("This is response %d%n", counter++);
-            response.setContentType("text/html");
-            PrintWriter out = response.getWriter();
-            out.println(output);
-        }
-
     }
 
 }
