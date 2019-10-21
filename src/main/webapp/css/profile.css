@@ -1,4 +1,10 @@
+body {
+    background: url(../images/vaporwave.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
 h1 {
     font-family: Helvetica;
     text-align: center;
 }
+

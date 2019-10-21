@@ -11,8 +11,9 @@
 <html>
 <head>
     <title>profile page</title>
-    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
 </head>
 <body>
 <%@ include file="partials/navbar.jsp" %>

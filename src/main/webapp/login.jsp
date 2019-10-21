@@ -48,14 +48,14 @@
 <%@ include file="partials/navbar.jsp" %>
 <form action="/login.jsp" method="Post">
     <div class="container">
-        <h1>Register</h1>
-        <p>Please fill in this form to create an account.</p>
+        <h1>Sign In</h1>
+        <p>Please fill in this form Sign In</p>
         <hr>
 
-        <label for="username"><b>Email</b></label>
+        <label for="username"><b>Enter Username: </b></label>
         <input id="username" type="text" placeholder="Enter username" name="username" required>
 
-        <label for="password"><b>Password</b></label>
+        <label for="password"><b>Enter Password: </b></label>
         <input id= "password" type="password" placeholder="Enter Password" name="password" required>
         <hr>
 
