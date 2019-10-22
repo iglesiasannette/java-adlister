@@ -9,10 +9,14 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body>
 <%@ include file="partials/navbar.jsp" %>
-<%@ include file="partials/footer.html" %>
 
+
+<h1>Your name is ${user}.</h1>
+
+<%@ include file="partials/footer.html" %>
 </body>
 </html>
