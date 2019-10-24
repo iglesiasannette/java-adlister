@@ -7,9 +7,13 @@ import java.io.IOException;
 
 @WebServlet(name = "LogOutServlet", urlPatterns = "/logout")
 public class LogOutServlet extends HttpServlet {
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-            request.getSession().invalidate();
-            request.getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getSession().invalidate();
+        response.sendRedirect("/login?logout");
     }
+
+//    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//            request.getSession().invalidate();
+//            response.sendRedirect("/login?logout");
+//    }
 }

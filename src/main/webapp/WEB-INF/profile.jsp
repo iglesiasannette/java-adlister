@@ -11,6 +11,7 @@
     <div class="container">
         <h1>Viewing your profile.</h1>
         <h2>Welcome ${sessionScope['user']}</h2>
+<%--                    ${sessionScope.user} works as well--%>
     </div>
 
 </body>
